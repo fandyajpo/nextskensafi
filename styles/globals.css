@@ -1,0 +1,33 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#chart-container {
+  height: 60vh;
+  width: 60vw;
+  position: relative;
+}
+
+@media (min-width: 768px) {
+  #chart-container {
+    height: auto;
+    width: auto;
+  }
+}
+
+/* embla */
+
+.card::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Handle */
+.card::-webkit-scrollbar-thumb {
+  background: rgb(127, 127, 127);
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+/* .card::-webkit-scrollbar-thumb:hover {
+  background: #5e5e5e;
+} */
