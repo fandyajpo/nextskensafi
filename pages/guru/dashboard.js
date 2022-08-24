@@ -1,32 +1,39 @@
-import React from "react";
+import React, { useRef } from "react";
 import { getLayout } from "components/layout/guru";
+import PropTypes from "prop-types";
+import PDFViewer, { propTypes } from "pdf-viewer-reactjs";
 
-import { Viewer, Worker } from "@react-pdf-viewer/core";
-import { defaultLayoutPlugin } from "@react-pdf-viewer/default-layout";
+const Dashboard = (props) => {
+  const [page, setPage] = React.useState(1);
+  const pdfRef = React.useRef(null);
 
-import PDFViewer from "pdf-viewer-reactjs";
+  PropTypes.shape({
+    url: String, // URL to the pdf
 
-const Dashboard = () => {
-  const defaultLayoutPluginInstance = defaultLayoutPlugin();
-  const [state, setState] = React.useState("kanjc.pdf");
+    base64: String, // PDF file encoded in base64
+  });
 
-  const onDocumentLoad = async (e) => await setState(e);
+  React.useEffect(() => {
+    console.log(pdfRef.current);
+  });
 
   return (
     <div className="w-full h-screen overflow-y-scroll">
-      <div className="w-full h-auto relative px-4 pt-4 flex flex-col md:flex-row gap-4">
+      <div className="w-full h-auto relative px-4 pt-4 flex flex-col md:flex-row gap-4 items-center justify-center">
         <PDFViewer
+          ref={pdfRef}
+          navbarOnTop={true}
+          page={page}
+          onNextBtnClick={() => pdfRef.current.handleNextClick}
+          loader={
+            <div className="bg-transparent w-44 h-44 animate-spin rounded-full border-l-2 border-blue-500" />
+          }
           document={{
             url: "https://arxiv.org/pdf/quant-ph/0410100.pdf",
           }}
+          scale={1}
         />
-        {/* <Worker workerUrl="https://unpkg.com/pdfjs-dist@2.15.349/build/pdf.worker.min.js">
-          <Viewer
-            onDocumentLoad={onDocumentLoad("http://localhost/pdf/da.pdf")}
-            fileUrl={state}
-            plugins={[defaultLayoutPluginInstance]}npm i pdf-viewer-reactjs
-          />
-        </Worker> */}
+        {/* <button onClick={() => pdfRef.current.handleNextClick}>Next</button> */}
       </div>
     </div>
   );

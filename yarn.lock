@@ -2978,6 +2978,11 @@
   "resolved" "https://registry.npmjs.org/proxy-from-env/-/proxy-from-env-1.1.0.tgz"
   "version" "1.1.0"
 
+"pspdfkit@^2022.3.2":
+  "integrity" "sha512-RNTYHNhaoTIVtC1lNe1HOtP2jc5vb8WeCHWt6gWIYDbssUVRj5GIvsfqrz4k3TU2WSOSmN4IQhhsJh/xj2xPoQ=="
+  "resolved" "https://registry.npmjs.org/pspdfkit/-/pspdfkit-2022.3.2.tgz"
+  "version" "2022.3.2"
+
 "pump@^3.0.0":
   "integrity" "sha512-LwZy+p3SFs1Pytd/jYct4wpv49HiYCqd9Rlc5ZVdk0V+8Yzv6jR5Blk3TRmPL1ft69TxP0IMZGJ+WPFU2BFhww=="
   "resolved" "https://registry.npmjs.org/pump/-/pump-3.0.0.tgz"

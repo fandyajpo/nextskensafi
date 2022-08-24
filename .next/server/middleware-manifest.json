@@ -1,25 +1,6 @@
 {
-  "sortedMiddleware": [
-    "/guru"
-  ],
-  "clientInfo": [
-    [
-      "/guru",
-      false
-    ]
-  ],
-  "middleware": {
-    "/guru": {
-      "env": [],
-      "files": [
-        "server/edge-runtime-webpack.js",
-        "server/pages/guru/_middleware.js"
-      ],
-      "name": "pages/guru/_middleware",
-      "page": "/guru",
-      "regexp": "^/guru(?:(/.*)?)$",
-      "wasm": []
-    }
-  },
+  "sortedMiddleware": [],
+  "clientInfo": [],
+  "middleware": {},
   "version": 1
 }
