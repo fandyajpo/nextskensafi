@@ -7,20 +7,20 @@ import { GlobalContext } from "lib/ctx";
 import { withIronSessionSsr } from "iron-session/next";
 import { sessionOptions } from "lib/session";
 
-export const getServerSideProps = withIronSessionSsr(async function ({
-  req,
-  res,
-  query,
-}) {
-  const [lPengumuman] = await Promise.all([listPengumuman(0, 5)]);
+// export const getServerSideProps = withIronSessionSsr(async function ({
+//   req,
+//   res,
+//   query,
+// }) {
+//   const [lPengumuman] = await Promise.all([listPengumuman(0, 5)]);
 
-  return {
-    props: {
-      pengumuman: lPengumuman?.[0] ? lPengumuman[0] : [],
-    },
-  };
-},
-sessionOptions);
+//   return {
+//     props: {
+//       pengumuman: lPengumuman?.[0] ? lPengumuman[0] : [],
+//     },
+//   };
+// },
+// sessionOptions);
 
 const Pengumuman = (props) => {
   return (

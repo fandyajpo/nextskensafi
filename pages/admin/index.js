@@ -3,6 +3,8 @@ import React from "react";
 import { GlobalContext, poster, logGer } from "lib/ctx";
 import Router from "next/router";
 
+import { TopBg, LeftBg, RightBg } from "lib/listSvg";
+
 import { Bright, LeftStudent, LeftStudents, Moodle } from "lib/listSvg";
 
 const StudentImage = React.memo(() => {
@@ -33,6 +35,15 @@ const Idx = (props) => {
 
   return (
     <>
+      <div className="absolute top-0">
+        <TopBg />
+      </div>
+      <div className="absolute right-0 bottom-0">
+        <RightBg />
+      </div>
+      <div className="absolute left-0 bottom-0">
+        <LeftBg />
+      </div>
       <div className="w-full h-screen mainpage">
         <div className="fixed flex w-full bottom-0">
           <StudentImage />

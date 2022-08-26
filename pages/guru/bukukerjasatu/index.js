@@ -4,8 +4,8 @@ import BukuKerjaSatuCard from "components/Card/bukusatu/bukuKerjaSatuCard";
 
 const BukuKerjaSatu = () => {
   return (
-    <div className="w-full h-screen px-4 pt-4 overflow-y-scroll pb-20">
-      <div className="flex gap-x-4 overflow-x-auto w-full py-4 border-b">
+    <div className="w-full h-screen overflow-y-scroll pb-20 p-2">
+      <div className="grid grid-cols-4 grid-rows-2 gap-4">
         <BukuKerjaSatuCard
           title={"Kompetensi Inti"}
           desc={"Pengaturan Kompetensi Inti"}
@@ -16,8 +16,7 @@ const BukuKerjaSatu = () => {
           desc={"Pengaturan Kompetensi Dasar"}
           href={"bukukerjasatu/kompetensiDasar"}
         />
-      </div>
-      <div className="flex gap-x-4 overflow-x-auto w-full py-4 border-b">
+
         <BukuKerjaSatuCard
           title={"Indikator Pencapaian Kompetensi"}
           desc={"Pengaturan Indikator Pencapaian Kompetensi"}

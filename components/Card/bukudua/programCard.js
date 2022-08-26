@@ -3,7 +3,7 @@ import Link from "next/link";
 
 const ProgramCard = React.memo(({ title, desc, href }) => {
   return (
-    <div className="bg-gray-200 w-1/4 h-52 border border-gray-300 rounded-xl overflow-hidden relative shadow-sm shadow-gray-700">
+    <div className="bg-gray-200 w-full h-52 border border-gray-300 rounded-xl overflow-hidden relative shadow-sm shadow-gray-700">
       <div className="w-full bg-gray-700 border-b flex items-center p-3 gap-x-1">
         <div className="w-3 h-3 rounded-full bg-white" />
         <p className="w-full text-right font-bold text-white">{title}</p>

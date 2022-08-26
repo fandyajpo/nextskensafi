@@ -1097,6 +1097,14 @@
   "resolved" "https://registry.npmjs.org/core-js-pure/-/core-js-pure-3.23.2.tgz"
   "version" "3.23.2"
 
+"cors@^2.8.5":
+  "integrity" "sha512-KIHbLJqu73RGr/hnbrO9uBeixNGuvSQjul/jdFvS/KFSIH1hWVd1ng7zOHx+YrEfInLG7q4n6GHQ9cDtxv/P6g=="
+  "resolved" "https://registry.npmjs.org/cors/-/cors-2.8.5.tgz"
+  "version" "2.8.5"
+  dependencies:
+    "object-assign" "^4"
+    "vary" "^1"
+
 "cross-fetch@3.1.5":
   "integrity" "sha512-lvb1SBsI0Z7GDwmuid+mU3kWVBwTVUbe7S0H52yaaAdQOXq2YktTCZdlAcNKFzE6QtRz0snpw9bNiPeOIkkQvw=="
   "resolved" "https://registry.npmjs.org/cross-fetch/-/cross-fetch-3.1.5.tgz"
@@ -2627,7 +2635,7 @@
   "resolved" "https://registry.npmjs.org/nprogress/-/nprogress-0.2.0.tgz"
   "version" "0.2.0"
 
-"object-assign@^4.1.1":
+"object-assign@^4", "object-assign@^4.1.1":
   "integrity" "sha512-rJgTQnkUnH1sFw8yT6VSU3zD3sWmu6sZhIseY8VX+GRu3P6F7Fu+JNDoXfklElbLJSnc3FUQHVe4cU5hj+BcUg=="
   "resolved" "https://registry.npmjs.org/object-assign/-/object-assign-4.1.1.tgz"
   "version" "4.1.1"
@@ -2808,15 +2816,7 @@
   "resolved" "https://registry.npmjs.org/path-type/-/path-type-4.0.0.tgz"
   "version" "4.0.0"
 
-"pdf-viewer-reactjs@^2.2.3":
-  "integrity" "sha512-HM6ngxxnbztd/N/3dB+of3jSZtzS8CjcAoIfSWe7OY9Aqwb6cXLHbluCWc//cySXDdj3hhe8Wj5Wjg7T1ktxUA=="
-  "resolved" "https://registry.npmjs.org/pdf-viewer-reactjs/-/pdf-viewer-reactjs-2.2.3.tgz"
-  "version" "2.2.3"
-  dependencies:
-    "pdfjs-dist" "^2.6.347"
-    "prop-types" "^15.7.2"
-
-"pdfjs-dist@^2.15.349", "pdfjs-dist@^2.6.347":
+"pdfjs-dist@^2.15.349":
   "integrity" "sha512-EeCfqj6xi4/aegKNS7Bs+TCg3Y5gmKmG0s/5xXI0PqWW66x+Nm7iFXBpVcup7HnR8sNDm+5NESfFr8T6DeWp9Q=="
   "resolved" "https://registry.npmjs.org/pdfjs-dist/-/pdfjs-dist-2.15.349.tgz"
   "version" "2.15.349"
@@ -3753,7 +3753,7 @@
   "resolved" "https://registry.npmjs.org/v8-compile-cache/-/v8-compile-cache-2.3.0.tgz"
   "version" "2.3.0"
 
-"vary@~1.1.2":
+"vary@^1", "vary@~1.1.2":
   "integrity" "sha512-BNGbWLfd0eUPabhkXUVm0j8uuvREyTh5ovRa/dyow/BqAbZJyC+5fU+IzQOzmAKzYqYRAISoRhdQr3eIZ/PXqg=="
   "resolved" "https://registry.npmjs.org/vary/-/vary-1.1.2.tgz"
   "version" "1.1.2"

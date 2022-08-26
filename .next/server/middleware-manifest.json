@@ -1,6 +1,57 @@
 {
-  "sortedMiddleware": [],
-  "clientInfo": [],
-  "middleware": {},
+  "sortedMiddleware": [
+    "/admin",
+    "/guru",
+    "/murid"
+  ],
+  "clientInfo": [
+    [
+      "/admin",
+      false
+    ],
+    [
+      "/guru",
+      false
+    ],
+    [
+      "/murid",
+      false
+    ]
+  ],
+  "middleware": {
+    "/guru": {
+      "env": [],
+      "files": [
+        "server/edge-runtime-webpack.js",
+        "server/pages/guru/_middleware.js"
+      ],
+      "name": "pages/guru/_middleware",
+      "page": "/guru",
+      "regexp": "^/guru(?:(/.*)?)$",
+      "wasm": []
+    },
+    "/murid": {
+      "env": [],
+      "files": [
+        "server/edge-runtime-webpack.js",
+        "server/pages/murid/_middleware.js"
+      ],
+      "name": "pages/murid/_middleware",
+      "page": "/murid",
+      "regexp": "^/murid(?:(/.*)?)$",
+      "wasm": []
+    },
+    "/admin": {
+      "env": [],
+      "files": [
+        "server/edge-runtime-webpack.js",
+        "server/pages/admin/_middleware.js"
+      ],
+      "name": "pages/admin/_middleware",
+      "page": "/admin",
+      "regexp": "^/admin(?:(/.*)?)$",
+      "wasm": []
+    }
+  },
   "version": 1
 }

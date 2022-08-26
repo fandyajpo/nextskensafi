@@ -2,7 +2,7 @@ import React from "react";
 
 import FormLogin from "components/Login/FormLogin";
 import IsLogin from "components/Login/IsLogin";
-
+import { BotBack, LeftBack, RightBack, TopBack } from "lib/listSvg";
 import { withIronSessionSsr } from "iron-session/next";
 import { sessionOptions } from "lib/session";
 
@@ -46,8 +46,19 @@ sessionOptions);
 export default function Login(props) {
   return (
     <>
-      {/* <div className='absolute w-96 h-96 rounded-full bg-blue-500 shadow-xl right-0' /> */}
-      <div className="w-screen h-screen flex flex-row justify-center items-center gap-4 bg-darkBlue">
+      <div className="absolute top-0 z-10">
+        <TopBack />
+      </div>
+      <div className="absolute left-0 top-0 z-10">
+        <LeftBack />
+      </div>
+      <div className="absolute right-0 top-0 z-10">
+        <RightBack />
+      </div>
+      <div className="absolute bottom-0 z-10">
+        <BotBack />
+      </div>
+      <div className="w-screen h-screen flex flex-row justify-center items-center gap-4 bg-darkBlue relative">
         {props?.isLogin ? <IsLogin /> : <FormLogin />}
       </div>
     </>

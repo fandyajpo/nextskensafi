@@ -5,6 +5,7 @@ import { useForm, Controller } from "react-hook-form";
 import { GlobalContext, poster, logGer } from "lib/ctx";
 import { Loading } from "lib/listSvg";
 import Router from "next/router";
+import { Bg } from "lib/listSvg";
 const env = process.env.NODE_ENV;
 
 import imHome from "public/animation/home.gif";
@@ -85,6 +86,7 @@ const FormLogin = React.memo(() => {
       >
         <Loading />
       </div>
+
       <div className="w-full h-screen flex md:flex-col-reverse lg:flex-row items-center flex-col-reverse">
         <form
           onSubmit={handleSubmit(onSubmit)}
@@ -136,7 +138,7 @@ const FormLogin = React.memo(() => {
                 <div className="w-full h-full">
                   <button
                     type="submit"
-                    disabled={isSubmitting ? "disabled" : ""}
+                    // disabled={isSubmitting ? "disabled" : ""}
                     className="w-full h-10 bg-blue-500 rounded-md border-2 border-blue-400 overflow-hidden"
                   >
                     <p className="text-white font-bold"> Login</p>
@@ -146,6 +148,7 @@ const FormLogin = React.memo(() => {
             </div>
           </div>
         </form>
+
         <div className="w-3/4 md:w-2/4 ">
           <LoginGif />
         </div>

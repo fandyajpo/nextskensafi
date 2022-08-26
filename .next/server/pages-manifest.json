@@ -1,5 +1,7 @@
 {
+  "/guru/_middleware": "pages/guru/_middleware.js",
   "/_app": "pages/_app.js",
   "/_error": "pages/_error.js",
-  "/_document": "pages/_document.js"
+  "/_document": "pages/_document.js",
+  "/guru/test2": "pages/guru/test2.js"
 }

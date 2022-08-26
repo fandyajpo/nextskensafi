@@ -11,12 +11,8 @@ const menus = [
     ],
   },
   {
-    name: "Administrasi Guru",
+    name: "Administrasi",
     menu: [
-      {
-        link: "/guru/administrasi",
-        name: "Daftar Buku Kerja",
-      },
       {
         link: "/guru/bukukerjasatu",
         name: "Buku Kerja 1",

@@ -4,7 +4,7 @@ import fetchJson, { FetchError } from "lib/fetchJson";
 import { checkerToken } from "lib/listFunct";
 
 export default withIronSessionApiRoute(async (req, res) => {
-  var user = await req.session;
+  // var user = await req.session;
   // if (!user || !user.access_token) {
   //   res.status(500).json({ message: "unauthorized" });
   // }

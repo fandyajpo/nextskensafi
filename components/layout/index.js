@@ -177,7 +177,7 @@ export const GuruNav = ({ menus, children }) => {
         </div>
       </div>
       <div className="w-screen h-full relative flex-row overflow-hidden">
-        <div className="w-full h-20 p-6 absolute top-0 bg-darkBlue border-b shadow flex justify-between">
+        <div className="w-full h-20 p-6 absolute top-0 bg-darkBlue shadow flex justify-between">
           <div className="w-full h-auto flex items-center text-sm capitalize">
             <Link href="/admin/dashboard">
               <svg

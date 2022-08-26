@@ -1,13 +1,9 @@
 // import { getLayout } from "components/layout/navigation";
-import { getLayout } from 'components/layout/pegawai';
+import { getLayout } from "components/layout/pegawai";
 
 const Dashboard = () => {
-  return (
-    <div className="w-full h-screen">
+  return <div className="w-full h-screen"></div>;
+};
 
-    </div>
-  )
-}
-
-Dashboard.getLayout = getLayout
-export default Dashboard
+Dashboard.getLayout = getLayout;
+export default Dashboard;

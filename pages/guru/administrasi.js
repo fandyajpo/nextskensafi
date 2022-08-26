@@ -7,16 +7,14 @@ import BukuDua from "components/Card/buku_dua";
 import BukuTiga from "components/Card/buku_tiga";
 import BukuEmpat from "components/Card/buku_empat";
 
-import { getCurrentMonth, getWeeksInMonth, weekCount } from "../../lib/date";
-
 const Administrasi = () => {
   return (
-    <div className="w-full h-screen px-4 pt-4 overflow-y-scroll pb-20">
-      <div className="flex gap-x-4 overflow-x-auto w-full py-4 border-b">
+    <div className="w-full h-screen px-4 p-2 overflow-y-scroll pb-20">
+      <div className="flex gap-x-4 overflow-x-auto w-full border-b pb-2">
         <BukuSatu />
         <BukuDua />
       </div>
-      <div className="flex gap-x-4 overflow-x-auto w-full py-4 border-b">
+      <div className="flex gap-x-4 overflow-x-auto w-full py-2 border-b">
         <BukuTiga />
         <BukuEmpat />
       </div>

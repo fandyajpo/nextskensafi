@@ -114,7 +114,7 @@ const FormPengumuman = (props, ref) => {
     let r;
     sErrMsg("");
     // data.uri = "bo/pengumuman";
-    data.uri = "";
+    data.uri = "pengumuman/add";
     console.log(data);
     // data.nama_lengkap = data.nama_lengkap.toLowerCase()
     // r = await poster(["api/prot/post", data]);
@@ -241,7 +241,7 @@ const FormPengumuman = (props, ref) => {
                 )}
               </div>
               <input
-                {...register("judul", { required: false })}
+                {...register("judul", { required: true })}
                 type="text"
                 className="placeholder-gray-300 form-input mt-1 rounded-md border w-full"
                 placeholder="Judul"

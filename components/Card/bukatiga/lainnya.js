@@ -3,8 +3,8 @@ import React from "react";
 
 const Lainnya = React.memo(({ title }) => {
   return (
-    <div className="bg-gray-100 w-2/4 h-auto border border-gray-300 rounded-xl overflow-hidden relative shadow-sm shadow-gray-700">
-      <div className="w-full bg-gray-700 border-b flex items-center p-3 gap-x-1">
+    <div className="bg-gray-100 w-full h-auto border border-gray-300 rounded-xl overflow-hidden relative shadow-sm shadow-gray-700">
+      <div className="w-full bg-darkBlue border-b flex items-center p-3 gap-x-1">
         <div className="w-3 h-3 rounded-full bg-white" />
         <p className="w-full text-right font-bold text-white">{title}</p>
       </div>
@@ -19,7 +19,7 @@ const Lainnya = React.memo(({ title }) => {
               </p>
             </div>
           </div>
-          <button className="bg-gray-700 hover:scale-105 duration-200 text-white py-2 px-8 text-xs font-bold rounded-full shadow-sm shadow-gray-500">
+          <button className="bg-darkBlue hover:scale-105 duration-200 text-white py-2 px-8 text-xs font-bold rounded-md shadow-sm shadow-gray-500">
             View
           </button>
         </div>
@@ -27,13 +27,13 @@ const Lainnya = React.memo(({ title }) => {
           <div className="flex flex-row gap-x-4 items-center">
             <Collection />
             <div>
-              <p className="text-base font-bold">Kumpulan Kisi-kisi Soal</p>
+              <p className="text-base font-bold">Kumpulan SoKisi-kisial</p>
               <p className="text-sm text-gray-400">
                 Soal sesuai dengan jurusan
               </p>
             </div>
           </div>
-          <button className="bg-gray-700 hover:scale-105 duration-200 text-white py-2 px-8 text-xs font-bold rounded-full shadow-sm shadow-gray-500">
+          <button className="bg-darkBlue hover:scale-105 duration-200 text-white py-2 px-8 text-xs font-bold rounded-md shadow-sm shadow-gray-500">
             View
           </button>
         </div>
@@ -41,13 +41,13 @@ const Lainnya = React.memo(({ title }) => {
           <div className="flex flex-row gap-x-4 items-center">
             <Collection />
             <div>
-              <p className="text-base font-bold">Kumpulan Kisi-kisi Soal</p>
+              <p className="text-base font-bold">Analisis Butir Soal</p>
               <p className="text-sm text-gray-400">
                 Soal sesuai dengan jurusan
               </p>
             </div>
           </div>
-          <button className="bg-gray-700 hover:scale-105 duration-200 text-white py-2 px-8 text-xs font-bold rounded-full shadow-sm shadow-gray-500">
+          <button className="bg-darkBlue hover:scale-105 duration-200 text-white py-2 px-8 text-xs font-bold rounded-md shadow-sm shadow-gray-500">
             View
           </button>
         </div>
@@ -55,13 +55,13 @@ const Lainnya = React.memo(({ title }) => {
           <div className="flex flex-row gap-x-4 items-center">
             <Collection />
             <div>
-              <p className="text-base font-bold">Kumpulan Kisi-kisi Soal</p>
+              <p className="text-base font-bold">Perbaikan Soal</p>
               <p className="text-sm text-gray-400">
-                Soal sesuai dengan jurusan
+                Terakhir diperbaiki tanggal 27 juni 2022
               </p>
             </div>
           </div>
-          <button className="bg-gray-700 hover:scale-105 duration-200 text-white py-2 px-8 text-xs font-bold rounded-full shadow-sm shadow-gray-500">
+          <button className="bg-darkBlue hover:scale-105 duration-200 text-white py-2 px-8 text-xs font-bold rounded-md shadow-sm shadow-gray-500">
             View
           </button>
         </div>
